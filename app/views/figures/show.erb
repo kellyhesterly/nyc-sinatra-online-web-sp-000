@@ -1,8 +1,9 @@
 <!DOCTYPE html>
   <head>
     <h4><%= @figure.name %></h4>
-    <li><%= @figure.titles {|title| title.name} %></li>
-    <% binding.pry %>
+    <% @figure.titles.each do |title| %>
+    <li><%= title.name %></li>
+    <% end %>
     <li><%= @figure.landmarks %></li>
   </head>
 </html>
