@@ -4,6 +4,10 @@
     <% @figure.titles.each do |title| %>
     <li><%= title.name %></li>
     <% end %>
-    <li><%= @figure.landmarks %></li>
+    <br>
+    <% @figure.landmarks.each do |landmark| %>
+    <li><%= landmark.name %></li>
+    <% end %>
+    
   </head>
 </html>
