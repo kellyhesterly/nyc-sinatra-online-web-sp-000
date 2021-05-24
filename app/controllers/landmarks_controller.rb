@@ -10,6 +10,6 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-    
+    @landmark = Landmark.create(params)
   end
 end
