@@ -13,4 +13,9 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.create(params[:landmark])
     redirect to "/landmarks/#{@landmark.id}"
   end
+
+  get '/landmarks/:id' do
+    @landmark = Landmark.find(params[:id])
+  end
+
 end
